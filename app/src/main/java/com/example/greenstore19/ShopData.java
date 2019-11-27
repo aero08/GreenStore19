@@ -5,9 +5,12 @@ public class ShopData {
     private String ShopName;
     private String ShopDescription;
     private String ShopAddress;
-    private int ShopImage;
+    private String ShopImage;
 
-    public ShopData(String shopName, String shopDescription, String shopAddress, int shopImage) {
+    public ShopData() {
+    }
+
+    public ShopData(String shopName, String shopDescription, String shopAddress, String shopImage) {
         ShopName = shopName;
         ShopDescription = shopDescription;
         ShopAddress = shopAddress;
@@ -26,7 +29,23 @@ public class ShopData {
         return ShopAddress;
     }
 
-    public int getShopImage() {
+    public String getShopImage() {
         return ShopImage;
+    }
+
+    public void setShopImage(String shopImage) {
+        ShopImage = shopImage;
+    }
+
+    public void setShopName(String shopName) {
+        ShopName = shopName;
+    }
+
+    public void setShopDescription(String shopDescription) {
+        ShopDescription = shopDescription;
+    }
+
+    public void setShopAddress(String shopAddress) {
+        ShopAddress = shopAddress;
     }
 }

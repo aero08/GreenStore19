@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".signup">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editTextName"
+        android:layout_marginBottom="-50dp"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:hint="Enter your Location"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editTextLocation"
+        android:layout_marginBottom="-50dp"
+        android:digits="0123456789"
+        android:drawableLeft="@android:drawable/stat_sys_speakerphone"
+        android:hint="Enter your Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignBottom="@id/editTextMobile"
+        android:layout_marginBottom="-50dp"
+        android:digits="0123456789"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint="Enter Verification Code"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextCode"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@drawable/btn_signup"
+        android:onClick="btn_signUp"
+        android:text="Signup"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>
